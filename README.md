@@ -59,7 +59,6 @@ flowchart LR
 | [`tests/salesforce/auth.setup.ts`](tests/salesforce/auth.setup.ts) | 환경 변수로만 로그인, 세션 저장. 계정이 없으면 Salesforce 테스트 전체를 건너뜀 |
 | [`tests/salesforce/account-list.spec.ts`](tests/salesforce/account-list.spec.ts) | 표준 Account 예제. 저장 성공을 토스트 문구가 아니라 화면에 남은 값으로 확인 |
 | [`plans/`](plans) | 테스트 계획 문서 — 시나리오, 기대 결과, 불안정 요소와 대응 |
-| [`.github/workflows/e2e.yml`](.github/workflows/e2e.yml) | push · 매주 월요일 사이트 테스트 자동 실행 |
 
 ### 직접 실행
 
