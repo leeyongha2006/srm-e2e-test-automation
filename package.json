@@ -1,0 +1,13 @@
+{
+    "name": "srm-e2e-test-automation",
+    "private": true,
+    "scripts": {
+        "test": "playwright test",
+        "test:site": "playwright test --project=site",
+        "test:salesforce": "playwright test --project=salesforce",
+        "report": "playwright show-report"
+    },
+    "devDependencies": {
+        "@playwright/test": "1.48.2"
+    }
+}
