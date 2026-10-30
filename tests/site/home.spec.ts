@@ -9,7 +9,7 @@ test.describe("portfolio site", () => {
     });
 
     test("shows the headline and core skills", async ({ page }) => {
-        await expect(page).toHaveTitle(/Salesforce Developer/);
+        await expect(page).toHaveTitle(/Salesforce & Web Developer/);
         await expect(page.getByRole("heading", { level: 1 })).toContainText("Salesforce");
         await expect(page.locator(".stats .stat")).toHaveCount(4);
     });
@@ -17,7 +17,7 @@ test.describe("portfolio site", () => {
     test("navigation jumps to each section", async ({ page }) => {
         for (const [link, section] of [
             ["About", "#about"],
-            ["Salesforce", "#projects"],
+            ["Work", "#projects"],
             ["Contact", "#contact"]
         ]) {
             await page.getByRole("navigation").getByRole("link", { name: link, exact: true }).click();
